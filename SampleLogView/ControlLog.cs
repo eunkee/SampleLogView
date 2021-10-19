@@ -7,7 +7,7 @@ namespace SampleLogView
 {
     public partial class ControlLog : UserControl
     {
-        const int nLimitLines = 100; //제한 라인 수
+        const int nLimitLines = 100;
 
         [System.Runtime.InteropServices.DllImport("user32.dll")]
         private static extern bool HideCaret(IntPtr hWnd);
@@ -64,7 +64,6 @@ namespace SampleLogView
                 }
             }
         }
-
 
         private void ClearToolStripMenuItem_Click(object sender, EventArgs e)
         {
